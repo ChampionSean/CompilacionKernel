@@ -78,4 +78,11 @@ Semestre 2018-1
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(79).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(80).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(81).png)
+### Herramientas
++ Virtual Box
++ nano
++ gedit
++ git
 
+### Dificultadas
++ La única dificultad que tuve en la práctica fue a la hora de instalar los paquetes con dpkg -i \ en el paquete linux-image..., para arreglar el error solo cambie el nombre por que no encontraba el linux-image...
