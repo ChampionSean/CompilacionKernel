@@ -1,4 +1,4 @@
-# Universidad Nacional Autónoma de México
+﻿# Universidad Nacional Autónoma de México
 # Facultad de Ciencias
 # Ciencias de la Computación
 # Sistemas Operativos
@@ -13,15 +13,15 @@ Semestre 2018-1
 
 ### Secciones
 
-+ [Preparación del sistema operativo](apt.md)
-+ [Instalación de dependencias y compilación del *kernel* Linux](kernel.md)
-+ [Creación del paquete `deb` del  *kernel*](deb.md)
-+ [Instalación del paquete `deb` del  *kernel*](install.md)
++ Preparación del sistema operativo
++ Instalación de dependencias y compilación del *kernel* Linux
++ Creación del paquete `deb` del  *kernel*
++ Instalación del paquete `deb` del  *kernel*
 
 ### Reporte, imagenes en orden, secuencia de comandos
 + Imagenes: 
 
-  ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(25).png)
+![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(25).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(26).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(27).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(28).png)
