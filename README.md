@@ -81,20 +81,76 @@ Instalar las dependencias básicas para compilar un kernel
 
 + Descomprimir el tarball
 + Intentar verificar la firma digital con gpg
++ Descargar el bloque de llaves públicas GPG de los desarrolladores del kernel
 
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(43).png)
+
++ Verificar la firma digital con gpg
+
+
+
++ Ejecutar gpg --verify por segunda vez para que verifique la firma digital
+
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(44).png)
+
++ Desempaquetar el tarball del kernel
+
+
+
++ Es necesario desempaquetar el archivo tar para acceder al árbol de código fuente del kernel
+
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(45).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(46).png)
+
++ Copiar la configuración del kernel actual
+
+
++ Se hace una copia de la configuración kernel actual para tomarla como base para el nuevo kernel que vamos a compilar:
+
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(47).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(48).png)
+
++ Configurar las opciones del kernel
+
+
+
++ Ejecutar make menuconfig para acceder al menú de configuración de las opciones del kernel
+
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(49).png)
+
++ Configurar opciones del kernel
+
+
+Seleccionar la opción General setup:
++ Después seleccionar Local version:
+
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(50).png)
+
++ Guardar cambios en el archivo .config
+
+
+Seleccionar la opción < Save > para guardar los cambios hechos a la configuración del kernel
+
+
++ Aceptar el nombre predeterminado (.config) en los cuadros de diálogo
+
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(51).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(52).png)
+
++Ejecutamos make help para ver las opciones disponibles
+
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(53).png)
+
++ Ejecutar make all para compilar el kernel y los módulos
+
+
++ Una vez leídas las opciones, ejecutamos make all para compilar el kernel, los módulos y hacer una imágen comprimida con bzip (bzImage)
+
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(54).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(55).png)
+
++ Se puede comprobar que make no generó error al revisar el código de salida:
+
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(56).png)
 
 ### Creación del paquete `deb` del kernel
