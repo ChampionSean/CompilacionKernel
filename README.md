@@ -55,13 +55,33 @@ Semestre 2018-1
 
 ### Instalacion de dependencias y compilacion del kernel linux
 
++ Instalación de dependencias
+
++ 
+Instalar las dependencias básicas para compilar un kernel
+
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(36).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(37).png)
+
++ Descargar el código fuente del kernel Linux
+
+
+
++ Descargar tarball del kernel
+
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(38).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(39).png)
+
++ Descargar la firma GPG
++ Listar para revisar el tamaño de los archivos descargados
+
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(40).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(41).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(42).png)
+
++ Descomprimir el tarball
++ Intentar verificar la firma digital con gpg
+
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(43).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(44).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(45).png)
