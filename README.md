@@ -33,12 +33,27 @@ Semestre 2018-1
 ### Preparacion del sistema operativo
 
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(31).png)
+
++ Verificar el archivo sources.list
+
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(32).png)
+
++ Verificar que el sistema esté actualizado
+
+
++ Ejecutar aptitude update para actualizar la información de los repositorios de paquetes y verificar que no existan actualizaciones pendientes
+
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(33).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(34).png)
+
++ Descargar e instalar actualizaciones
+
+
++ En caso de existir actualizaciones pendientes, descargarlas e instalarlas
+
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(35).png)
 
-### Instalacion de dependencias y compilacion del kerlen linux
+### Instalacion de dependencias y compilacion del kernel linux
 
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(36).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(37).png)
