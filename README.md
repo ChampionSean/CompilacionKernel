@@ -208,19 +208,55 @@ Seleccionar la opción < Save > para guardar los cambios hechos a la configuraci
 
 ### Instalación del paquete `deb` del  *kernel*
 
++ Instalar los paquetes con dpkg
+
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(67).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(68).png)
+
++ Listar los paquetes instalados
+
+Se pueden listar los paquetes del kernel utilizando aptitude:
+
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(69).png)
+
++ Verificar el contenido del directorio /boot
+
+
+Dentro del directorio /boot deben existir los siguientes archivos para cada kernel que se tenga instalado:
+
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(70).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(71).png)
+
++ Verificar la configuración del cargador de inicio grub
+
+
+Debe existir una configuración de grub que haga referencia al kernel que se compiló e instaló desde paquetes:
+
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(72).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(73).png)
+
++ Verificar la versión de kernel en el cargador de inicio
+
+Al reiniciar la máquina virtual se muestra la pantalla de grub
+
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(74).png)
-![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(75).png)
-![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(76).png)
-![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(77).png)
+
+Verificar utilizando las herramientas del sistema operativo
+
+Una vez que el sistema operativo haya iniciado, verificar la versión del kernel
+
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(78).png)
+
++ Verificar utilizando la información de alguún módulo del kernel
+
+
+Revisar la información de algún módulo para ver la ruta y la versión del kernel para la que fue compilado
++ Intentar cargar el módulo y ver si se integra la funcionalidad que contiene
+
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(79).png)
+
++ Listar la ruta de los módulos y cabeceras para el kernel compilado
+
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(80).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(81).png)
 ### Herramientas
