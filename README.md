@@ -155,14 +155,54 @@ Seleccionar la opción < Save > para guardar los cambios hechos a la configuraci
 
 ### Creación del paquete `deb` del kernel
 
++ Ejecutar make deb-pkg para generar los paquetes necesarios para instalar este kernel en un equipo con sistema operativo de tipo debian
+
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(57).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(58).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(59).png)
+
++ Listar los paquetes generados y tomar nota del tamaño, especialmente para el paquete linux-image-*-dbg_*.deb
+
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(60).png)
+
++ Obtener la información de control sobre cada paquete
+
+
+
++ libc-dev
+	
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(61).png)
+
++ Obtener la información de control sobre cada paquete
+
+
+
++ linux-firmware
+
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(62).png)
+
++ Obtener la información de control sobre cada paquete
+
+
+
++ linux-headers
+
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(63).png)
+
++ Obtener la información de control sobre cada paquete
+
+
+
++ linux-image
+
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(64).png)
+
++ Obtener la información de control sobre cada paquete
+
+
+
++ linux-image, símbolos de depuración
+
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(65).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(66).png)
 
