@@ -147,13 +147,13 @@ Seleccionar la opción < Save > para guardar los cambios hechos a la configuraci
 
 ### Creación del paquete `deb` del kernel
 
-+ Ejecutar make deb-pkg para generar los paquetes necesarios para instalar este kernel en un equipo con sistema operativo de tipo debian
++ Ejecuté make deb-pkg para generar los paquetes necesarios para instalar este kernel en un equipo con sistema operativo de tipo debian
 
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(57).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(58).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(59).png)
 
-+ Listar los paquetes generados y tomar nota del tamaño, especialmente para el paquete linux-image-*-dbg_*.deb
++ Listé los paquetes generados y tomar nota del tamaño, especialmente para el paquete linux-image-*-dbg_*.deb
 
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(60).png)
 
@@ -162,6 +162,7 @@ Seleccionar la opción < Save > para guardar los cambios hechos a la configuraci
 
 
 + libc-dev
++ Aquí listé los paquetes libc-dev 
 	
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(61).png)
 
@@ -170,6 +171,7 @@ Seleccionar la opción < Save > para guardar los cambios hechos a la configuraci
 
 
 + linux-firmware
++ Aquí listé los paquetes linux-firmware
 
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(62).png)
 
@@ -178,6 +180,7 @@ Seleccionar la opción < Save > para guardar los cambios hechos a la configuraci
 
 
 + linux-headers
++ Aquí listé los paquetes linux-headers
 
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(63).png)
 
@@ -186,6 +189,7 @@ Seleccionar la opción < Save > para guardar los cambios hechos a la configuraci
 
 
 + linux-image
++ Aquí listé los paquetes linux-image
 
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(64).png)
 
@@ -194,24 +198,25 @@ Seleccionar la opción < Save > para guardar los cambios hechos a la configuraci
 
 
 + linux-image, símbolos de depuración
++ Aquí listé los paquetes linux-image
 
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(65).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(66).png)
 
 ### Instalación del paquete `deb` del  *kernel*
 
-+ Instalar los paquetes con dpkg
++ Aquí instalé los paquetes con dpkg
 
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(67).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(68).png)
 
-+ Listar los paquetes instalados
++ Listé los paquetes instalados,
 
-Se pueden listar los paquetes del kernel utilizando aptitude:
+ lo hice utilizando aptitude:
 
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(69).png)
 
-+ Verificar el contenido del directorio /boot
++ Aquí verifiqué el contenido del directorio /boot
 
 
 Dentro del directorio /boot deben existir los siguientes archivos para cada kernel que se tenga instalado:
@@ -219,35 +224,30 @@ Dentro del directorio /boot deben existir los siguientes archivos para cada kern
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(70).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(71).png)
 
-+ Verificar la configuración del cargador de inicio grub
++ Aquí verifiqué la configuración del cargador de inicio grub
 
 
-Debe existir una configuración de grub que haga referencia al kernel que se compiló e instaló desde paquetes:
+Debe donde la configuración de grub que hace referencia al kernel que se compiló e instaló desde paquetes:
 
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(72).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(73).png)
 
-+ Verificar la versión de kernel en el cargador de inicio
++ Después reinicie el sistema y Verifiqué la versión de kernel en el cargador de inicio
 
-Al reiniciar la máquina virtual se muestra la pantalla de grub
+ al reiniciar la máquina virtual se muestra la pantalla de grub
 
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(74).png)
 
-Verificar utilizando las herramientas del sistema operativo
-
-Una vez que el sistema operativo haya iniciado, verificar la versión del kernel
++ Verifiqué utilizando las herramientas del sistema operativo la versión del kernel
 
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(78).png)
 
-+ Verificar utilizando la información de alguún módulo del kernel
-
-
-Revisar la información de algún módulo para ver la ruta y la versión del kernel para la que fue compilado
-+ Intentar cargar el módulo y ver si se integra la funcionalidad que contiene
++ Verifiqué utilizando la información de algún módulo para ver la ruta y la versión del kernel para la que fue compilado
++ Intenté cargar el módulo y ver si se integra la funcionalidad que contiene
 
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(79).png)
 
-+ Listar la ruta de los módulos y cabeceras para el kernel compilado
++ Por último listé la ruta de los módulos y cabeceras para el kernel compilado
 
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(80).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(81).png)
