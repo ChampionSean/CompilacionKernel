@@ -23,6 +23,7 @@ Semestre 2018-1
 
 ### Intalacion del sistema operativo
 
++ En estas imagenes se muestra la instalación que hice del sistema operativo debian-jessie usando una máquina virtual con virtualbox.
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(25).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(26).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(27).png)
@@ -32,24 +33,26 @@ Semestre 2018-1
 
 ### Preparacion del sistema operativo
 
++ Después de haber instalado el sistema operativo continuo con el proceso de compilación del kernel.
+
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(31).png)
 
-+ Verificar el archivo sources.list
++ Primero verifico el archivo sources.list, que venga tal y como se muestra en la práctica, en mi caso remplace el archivo por el que venía descrito en la práctica
 
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(32).png)
 
 + Verificar que el sistema esté actualizado
 
 
-+ Ejecutar aptitude update para actualizar la información de los repositorios de paquetes y verificar que no existan actualizaciones pendientes
++ Ejecuté aptitude update para actualizar la información de los repositorios de paquetes y verificar que no existan actualizaciones pendientes
 
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(33).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(34).png)
 
-+ Descargar e instalar actualizaciones
 
 
 + En caso de existir actualizaciones pendientes, descargarlas e instalarlas
++ Pero a mi no me salieron actualizaciones pendientes por lo que todo se quedó como estaba.
 
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(35).png)
 
@@ -58,75 +61,66 @@ Semestre 2018-1
 + Instalación de dependencias
 
 + 
-Instalar las dependencias básicas para compilar un kernel
+Instalé las dependencias básicas para compilar el kernel, usando los comandos descritos en la práctica
++ Adjunto el resultado en las imágenes:
 
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(36).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(37).png)
 
-+ Descargar el código fuente del kernel Linux
-
-
-
-+ Descargar tarball del kernel
++ Después descargué el código fuente del kernel linux y el tarball del kernel, usando los comandos descritos en la práctica
 
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(38).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(39).png)
 
-+ Descargar la firma GPG
-+ Listar para revisar el tamaño de los archivos descargados
++ Lo siguiente fué descargar la firma GPG
++ Y istar para revisar el tamaño de los archivos descargados
 
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(40).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(41).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(42).png)
 
-+ Descomprimir el tarball
-+ Intentar verificar la firma digital con gpg
-+ Descargar el bloque de llaves públicas GPG de los desarrolladores del kernel
++ Lo siguiente fué descomprimir el tarball
++ E intentar verificar la firma digital con gpg
++ También descargar el bloque de llaves públicas GPG de los desarrolladores del kernel
 
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(43).png)
 
-+ Verificar la firma digital con gpg
++ Volví a verificar la firma digital con gpg
 
 
 
-+ Ejecutar gpg --verify por segunda vez para que verifique la firma digital
++ Ejecuté gpg --verify por segunda vez para que verifique la firma digital
 
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(44).png)
 
-+ Desempaquetar el tarball del kernel
++ Después procedí a desempaquetar el tarball del kernel
 
 
 
-+ Es necesario desempaquetar el archivo tar para acceder al árbol de código fuente del kernel
++ Fué necesario desempaquetar el archivo tar para acceder al árbol de código fuente del kernel
 
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(45).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(46).png)
 
-+ Copiar la configuración del kernel actual
++ Hice una copia de la configuración del kernel actual
 
-
-+ Se hace una copia de la configuración kernel actual para tomarla como base para el nuevo kernel que vamos a compilar:
+, tal y como lo indica la práctica
++ E hice una copia de la configuración kernel actual para tomarla como base para el nuevo kernel que vamos a compilar, tal y como lo indica la práctica:
 
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(47).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(48).png)
 
-+ Configurar las opciones del kernel
 
 
-
-+ Ejecutar make menuconfig para acceder al menú de configuración de las opciones del kernel
++ Después Ejecuté make menuconfig para acceder al menú de configuración de las opciones del kernel
 
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(49).png)
 
-+ Configurar opciones del kernel
-
-
-Seleccionar la opción General setup:
-+ Después seleccionar Local version:
++ Después configuré las opciones del kernel tal y como lo indica la práctica, y quedó tal y como se muestra en la siguiente imágen.
 
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(50).png)
 
-+ Guardar cambios en el archivo .config
++ Guardé cambios en el archivo .config
 
 
 Seleccionar la opción < Save > para guardar los cambios hechos a la configuración del kernel
@@ -137,14 +131,12 @@ Seleccionar la opción < Save > para guardar los cambios hechos a la configuraci
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(51).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(52).png)
 
-+Ejecutamos make help para ver las opciones disponibles
++Después ejecuté make help para ver las opciones disponibles del comando
 
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(53).png)
 
-+ Ejecutar make all para compilar el kernel y los módulos
-
-
-+ Una vez leídas las opciones, ejecutamos make all para compilar el kernel, los módulos y hacer una imágen comprimida con bzip (bzImage)
++ Para finalizar esta sección hice make all para compilar el kernel y los módulos
++ En esta parte se tardó en terminar de compilar
 
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(54).png)
 ![Tux](https://github.com/ChampionSean/CompilacionKernel/blob/master/img/Captura%20de%20pantalla%20(55).png)
